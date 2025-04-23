@@ -1,8 +1,8 @@
-# TYPO3 Extension: X-Originating-IP
+# TYPO3 Extension: Originating-IP
 
 ## What does it do?
 
-Add the `X-Originating-IP` header to mails, that are generated in the frontend by unauthenticated users. Its value is the client IP address.
+It adds the `X-Originating-IP` header to mails, that are generated in the frontend by unauthenticated users. Its value is the client IP address.
 
 ## What is it used for?
 
