@@ -1,0 +1,14 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+  Lemming\OriginatingIp\:
+    resource: '../Classes/*'
+    exclude: '../Classes/Domain/Model/*'
+  Lemming\OriginatingIp\EventListener\AddMailHeader:
+    tags:
+      -
+        name: event.listener
+        identifier: lemming/originating-ip/add-header
+        event: TYPO3\CMS\Core\Mail\Event\BeforeMailerSentMessageEvent
